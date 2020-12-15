@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## steps to run application:
+
+1. clone the project to local directory.
+2. open project path in terminal and run 'npm install' command to install all dependencies.
+3. now run 'npm run start' command to start application in local server.
+4. Navigate to `http://localhost:4200/` and check out the shopping cart app.
