@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'cart-items',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartItemsComponent implements OnInit {
 
+  @Input() CartItemData = null;
+
   constructor() { }
 
   ngOnInit() {
-  }
+  } 
 
 }

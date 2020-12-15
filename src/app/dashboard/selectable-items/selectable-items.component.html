@@ -1,1 +1,15 @@
-<p>selectable-items works!</p>
+<div class="d-flex flex-row flex-wrap justify-content-center">
+    <div class="col-4" *ngFor="let item of products">
+        <div class="shadow-lg p-10 m-3 bg-white rounded" id="boxLayout">
+            <img [src]="item.image" alt="item.name" id="imageBox">
+            <p id="itemName">{{item.name}}</p>
+            <p id="iteamPrice">{{item.price | currency:'INR'}}</p>
+            <button *ngIf="item.noOfItemsInCart == 0; else cartView" id="AddItem" (click)="addItemToCart(item)">Add To Cart</button>
+            <ng-template #cartView>
+                <img class="removeItem" src="../../../assets/minus.png" alt="Remove" (click)="removeItemToCart(item)">
+                <span class="itemCount">{{item.noOfItemsInCart}}</span>
+                <img class="addItem" src="../../../assets/plus.png" alt="Add" (click)="addItemToCart(item)">
+            </ng-template>
+        </div>
+    </div>
+</div>

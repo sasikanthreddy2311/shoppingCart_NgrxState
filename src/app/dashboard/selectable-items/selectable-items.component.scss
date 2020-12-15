@@ -1,0 +1,49 @@
+#boxLayout {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+#imageBox {
+    width: 100px;
+    height: 100px;
+}
+
+#itemName {
+    margin-top: 30px;
+}
+
+#AddItem {
+    background-color: transparent;
+    border: 2px solid green;
+    font-size: 10px;
+    padding: 5px 15px;
+    color: green;
+    font-weight: bold;
+}
+
+.addItem {
+    height: 25px;
+    border: 2px solid green;
+    width: 25px;
+    padding: 3px;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.removeItem {
+    height: 25px;
+    border: 2px solid green;
+    width: 25px;
+    padding: 3px;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.itemCount {
+    margin: 0px 10px;
+    padding: 8px 10px;
+    background: lightgrey;
+}

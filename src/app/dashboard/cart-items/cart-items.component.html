@@ -1,1 +1,19 @@
-<p>cart-items works!</p>
+<div class="shadow-lg p-10 mt-3 mr-3 bg-white rounded col-12" style="margin-right: 20px;" id="boxLayout">
+    <h6>Your Cart</h6>
+    <table class="table" id="team-list">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th class="text-muted" scope="col">Item</th>
+            <th class="text-muted" scope="col">Quantity</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of CartItemData; let i = index">
+          <tr class="rowCounter" *ngIf="item.noOfItemsInCart > 0">
+            <td></td>
+            <td>{{item.name}}</td>
+            <td>{{item.noOfItemsInCart}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
